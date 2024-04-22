@@ -174,7 +174,7 @@ export default function FormularioCita() {
           <h3>Aún no hay citas reservadas</h3>
         )}
       </section>
-      <Toaster richColors visibleToasts={12} />
+      <Toaster richColors visibleToasts={12} autoHideDuration={3000} />
 
     </>
   )

@@ -38,7 +38,12 @@ h2 {
 
 
  
-h1, h2, h3{
+h1, h2{
+    text-align: center;
+    color: var(--blanco);
+} 
+
+h3{
     text-align: center;
     color: var(--primario);
 } 

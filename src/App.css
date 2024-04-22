@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+:root {
+    --primario: #495261;
+    --secundario: #ECAE36;
+    --gris: #757575;
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --grisClaro: #dfe9f3;
+}
+/*Globales*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /*Para que el padding no modifique el tamaño de la caja, siempre
+                            y cuando tenga esta un height definida*/
+    /*scroll-snap-type: y mandatory;                         */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*, *:after, *:before {/*box-sizing tambien*/
+    box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body, textarea, input, select, option {
+    font-size: 16px; /* 1rem = 10px */
+    font-family: krub, sans-serif;
+    letter-spacing: 0.1rem;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*Tipografia*/
+
+h1 {
+    font-size: 3.8rem;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+    font-size: 2.5rem;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+ 
+h1, h2, h3{
+    text-align: center;
+    color: var(--primario);
+} 
+
+
+.titulo {
+    color: var(--primario);
+    text-align: center;
+    text-transform: uppercase;
 }

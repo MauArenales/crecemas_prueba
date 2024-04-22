@@ -1,0 +1,115 @@
+:root {
+    --primario: #495261;
+    --secundario: #ECAE00;
+    --gris: #757575;
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --grisClaro: #dfe9f3;
+}
+
+.contenedor {
+    background-color: var(--primario);
+    width: 60%;
+    margin: 0 auto 2rem auto;
+    color: var(--blanco);
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        width: 80%;
+    }
+}
+
+.titulo-formulario {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+
+.contenedor-campos {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+@media (min-width: 768px) {
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10rem;
+    }
+}
+
+.campo {
+    margin-bottom: 1.5rem;
+}
+
+.campo label {
+    display: block;
+    color: var(--blanco);
+    margin-bottom: 0.5rem;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.enviar {
+    width: 100%;
+}
+
+.enviar .boton-enviar {
+    width: 15rem;
+    padding: 1rem;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--secundario);
+    border: none;
+    border-radius: 5px;
+    color: var(--blanco);
+    cursor: pointer;
+
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .enviar .boton-enviar {
+        width: 100%;
+    }
+}
+
+.enviar .boton-enviar:hover {
+    background-color: #ECAE36;
+    /* Cambiar color cuando se pasa el cursor */
+}
+
+.contenedor-formulario {
+    padding: 2rem;
+}
+
+.contenedor-citas {
+    width: 60%;
+    margin: 0 auto 2rem auto;
+}
+
+.contenedor-citas-grilla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .contenedor-citas-grilla {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+}

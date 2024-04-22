@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-
+import FormularioCita from './componentes/FormularioCita';
 function App() {
+/*Agregar fetch para leer las citas existentes*/
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='contenedor-principal'>
+        <header>
+          <h1 className='titulo'>Formulario de citas médicas</h1>
+        </header>
+        <FormularioCita />
+      </div>
     </div>
+
   );
 }
 

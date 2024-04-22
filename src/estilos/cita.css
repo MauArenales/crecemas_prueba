@@ -13,6 +13,7 @@
     width: 100%;
     margin: 0 auto 2rem auto;
     color: var(--blanco);
+    border-radius: 10px;
 }
 
 @media (max-width: 480px) {

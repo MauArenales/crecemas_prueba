@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "../estilos/cita.css"
 export default function Cita({ id,nombrePaciente, dni, fechaCita, horaCita, sintomas, generoselected, eliminarCita }) {
   function formatearFecha(fecha) {
